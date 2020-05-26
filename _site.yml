@@ -1,0 +1,12 @@
+name: "ds-at-2dii"
+title: "Data science at 2DII"
+description: |
+  Data science at 2DII
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
