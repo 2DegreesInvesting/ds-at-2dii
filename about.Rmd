@@ -8,7 +8,7 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-In this blog we share out data science experience at 2DII. Here are some of the projects you may read about:
+In this blog we share our data science experience at 2DII. Here are some of the projects you may read about:
 
 * [ds-incubator](https://github.com/2DegreesInvesting/ds-incubator): Weekly meetups to share best practices.
 * [coding-helpdesk](https://github.com/2DegreesInvesting/coding-helpdesk): Live support by appointment.
