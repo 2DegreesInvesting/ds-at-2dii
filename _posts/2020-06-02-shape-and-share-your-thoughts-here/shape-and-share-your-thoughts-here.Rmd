@@ -15,7 +15,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-A great deal of what you do at work is to think and share your thoughts with your others. But, as Leslie Lamport said, "If you think without writing, you only think you're thinking". To polish your thoughts you need to write them down somewhere; a good place is a blog.
+A great deal of what you do at work is to think and share your thoughts. But "If you think without writing, you only think you're thinking" (Leslie Lamport). To shape and share your thoughts you need a blog.
 
 This blog uses distill, a publication format for scientific and technical writing, native to the web. Learn more about using distill at <https://rstudio.github.io/distill>.
 
