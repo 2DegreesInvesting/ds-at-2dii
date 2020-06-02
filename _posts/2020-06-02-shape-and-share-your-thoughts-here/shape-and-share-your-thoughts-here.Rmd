@@ -16,7 +16,7 @@ categories:
   - blogging
   - writing
   - community
-preview: distill-preview.jpg
+preview: preview.jpg
 twitter:
   site: "@mauro_lepore"
   creator: "@mauro_lepore"
