@@ -5,10 +5,21 @@ description: |
 author:
   - name: Mauro Lepore
     url: https://github.com/maurolepore
+base_url: https://2degreesinvesting.github.io/ds-at-2dii/
 date: 06-02-2020
-output:
+output: 
   distill::distill_article:
-    self_contained: false
+    toc: true
+    toc_depth: 3
+    self_contained: true
+categories:
+  - blogging
+  - writing
+  - community
+preview: distill-preview.jpg
+twitter:
+  site: "@mauro_lepore"
+  creator: "@mauro_lepore"
 ---
 
 ```{r setup, include=FALSE}

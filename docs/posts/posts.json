@@ -10,8 +10,12 @@
       }
     ],
     "date": "2020-06-02",
-    "categories": [],
+    "categories": [
+      "blogging",
+      "writing",
+      "community"
+    ],
     "preview": {},
-    "last_modified": "2020-06-02T08:39:38-05:00"
+    "last_modified": "2020-06-02T18:14:25-05:00"
   }
 ]
