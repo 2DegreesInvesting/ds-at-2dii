@@ -1,17 +1,17 @@
 [
   {
-    "path": "posts/2019-10-15_setup/",
-    "title": "Seting up your data science environment for success",
-    "description": "A guide to setup GitHub, R, RStudio, and Git",
+    "path": "posts/2020-06-02-welcome-to-read-and-blog/",
+    "title": "Shape and share your thoughts here",
+    "description": "\"If you think without writing, you only think you're thinking\" -- Leslie Lamport",
     "author": [
       {
         "name": "Mauro Lepore",
         "url": "https://github.com/maurolepore"
       }
     ],
-    "date": "2020-05-26",
+    "date": "2020-06-02",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-05-26T11:22:22-05:00"
+    "last_modified": "2020-06-02T08:19:55-05:00"
   }
 ]
