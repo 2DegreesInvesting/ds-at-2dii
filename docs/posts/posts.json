@@ -1,5 +1,20 @@
 [
   {
+    "path": "posts/2020-06-02-r2diidata-010/",
+    "title": "r2dii.data 0.1.0 is now on CRAN",
+    "description": "This release includes new and improved datasets.",
+    "author": [
+      {
+        "name": "Mauro Lepore",
+        "url": "https://github.com/maurolepore"
+      }
+    ],
+    "date": "2020-06-02",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-06-02T15:03:58-05:00"
+  },
+  {
     "path": "posts/2020-06-02-shape-and-share-your-thoughts-here/",
     "title": "Shape and share your thoughts here",
     "description": "\"If you think without writing, you only think you're thinking\" -- Leslie Lamport.",
