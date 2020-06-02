@@ -1,7 +1,7 @@
 ---
-title: "shape-and-share-your-thoughts-here"
+title: "Shape and share your thoughts here"
 description: |
-  A short description of the post.
+  "If you think without writing, you only think you're thinking" -- Leslie Lamport.
 author:
   - name: Mauro Lepore
     url: https://github.com/maurolepore
@@ -15,7 +15,17 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-A great deal of what you do at work is to think and share your thoughts with your others. But,  as Leslie Lamport said, "If you think without writing, you only think you're thinking". To polish your thoughts you need to write them down somewhere; a good place is a blog.
+A great deal of what you do at work is to think and share your thoughts with your others. But, as Leslie Lamport said, "If you think without writing, you only think you're thinking". To polish your thoughts you need to write them down somewhere; a good place is a blog.
 
-This blog uses distill, a publication format for scientific and technical writing, native to the web. Learn more about using Distill at <https://rstudio.github.io/distill>.
+This blog uses distill, a publication format for scientific and technical writing, native to the web. Learn more about using distill at <https://rstudio.github.io/distill>.
 
+Start now:
+
+If you want to publish a new post you wrote, [submit a pull request here](https://github.com/2DegreesInvesting/ds-at-2dii/pulls). For these other things, [open an issue here](https://github.com/2DegreesInvesting/ds-at-2dii/issues):
+
+* Discuss an idea for a new post.
+* Suggest a way to improve this blog.
+* Share a link of an article you would like to re-publish here.
+* Ask a question.
+
+I look forward to your hearing from you!

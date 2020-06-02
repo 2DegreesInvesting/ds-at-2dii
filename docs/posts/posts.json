@@ -1,8 +1,8 @@
 [
   {
-    "path": "posts/2020-06-02-welcome-to-read-and-blog/",
+    "path": "posts/2020-06-02-shape-and-share-your-thoughts-here/",
     "title": "Shape and share your thoughts here",
-    "description": "\"If you think without writing, you only think you're thinking\" -- Leslie Lamport",
+    "description": "\"If you think without writing, you only think you're thinking\" -- Leslie Lamport.",
     "author": [
       {
         "name": "Mauro Lepore",
@@ -12,6 +12,6 @@
     "date": "2020-06-02",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-06-02T08:19:55-05:00"
+    "last_modified": "2020-06-02T08:33:56-05:00"
   }
 ]
