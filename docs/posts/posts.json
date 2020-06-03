@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/2020-06-02-r2diidata-010/",
+    "title": "r2dii.data 0.1.0 is now on CRAN",
+    "description": "This release includes new and improved datasets.",
+    "author": [
+      {
+        "name": "Mauro Lepore",
+        "url": "https://github.com/maurolepore"
+      }
+    ],
+    "date": "2020-06-03",
+    "categories": [
+      "r2dii",
+      "software development",
+      "CRAN",
+      "release"
+    ],
+    "preview": "posts/2020-06-02-r2diidata-010/preview.jpg",
+    "last_modified": "2020-06-03T08:13:42-05:00"
+  },
+  {
     "path": "posts/2020-06-02-shape-and-share-your-thoughts-here/",
     "title": "Shape and share your thoughts here",
     "description": "\"If you think without writing, you only think you're thinking\" -- Leslie Lamport.",
@@ -11,11 +31,11 @@
     ],
     "date": "2020-06-02",
     "categories": [
-      "ds-incubator",
-      "community",
-      "writing"
+      "blogging",
+      "writing",
+      "community"
     ],
     "preview": "posts/2020-06-02-shape-and-share-your-thoughts-here/preview.jpg",
-    "last_modified": "2020-06-03T07:58:57-05:00"
+    "last_modified": "2020-06-03T08:18:54-05:00"
   }
 ]
