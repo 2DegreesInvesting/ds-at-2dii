@@ -13,9 +13,9 @@ output:
     toc_depth: 3
     self_contained: true
 categories:
-  - ds-incubator
-  - community
+  - blogging
   - writing
+  - community
 preview: preview.jpg
 twitter:
   site: "@mauro_lepore"
@@ -26,7 +26,7 @@ twitter:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-A great deal of what you do at work is to think and share your thoughts. But "If you think without writing, you only think you're thinking" (Leslie Lamport). [To shape and share your thoughts you need a blog](https://github.com/2DegreesInvesting/ds-incubator/issues/47).
+A great deal of what you do at work is to think and share your thoughts. But "If you think without writing, you only think you're thinking" (Leslie Lamport). To shape and share your thoughts you need a blog. To lean how to create your own blog see [ds-incubator#47](https://github.com/2DegreesInvesting/ds-incubator/issues/47).
 
 This blog uses distill, a publication format for scientific and technical writing, native to the web. Learn more about using distill at <https://rstudio.github.io/distill>.
 
