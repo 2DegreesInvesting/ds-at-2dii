@@ -2338,94 +2338,104 @@ distill-header .nav a {
 install.packages(&quot;r2dii.data&quot;)</code></pre>
 <p>Then use it with:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+library(r2dii.data)</code></pre>
 </div>
 <p>I also use the package dplyr; it is not necessary but convenient.</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<pre class="r"><code>
+library(dplyr)</code></pre>
 </div>
 <p>All user-facing changes are listed in the <a href="https://2degreesinvesting.github.io/r2dii.data/news/index.html">changelog</a>; here I’ll show the most important ones.</p>
 <p>We fixed a bug in the dataset <code>naics_classification</code>; it now contains the correct data.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>
-# A tibble: 68 x 4
-    code code_level sector       borderline
-   &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;        &lt;lgl&gt;     
- 1    11 sector     not in scope FALSE     
- 2    21 sector     not in scope FALSE     
- 3    22 sector     not in scope FALSE     
- 4    23 sector     not in scope FALSE     
- 5    31 sector     not in scope FALSE     
- 6    32 sector     not in scope FALSE     
- 7    33 sector     not in scope FALSE     
- 8    42 sector     not in scope FALSE     
- 9    44 sector     not in scope FALSE     
-10    45 sector     not in scope FALSE     
-# … with 58 more rows</code></pre>
+<pre class="r"><code>
+naics_classification
+#&gt; # A tibble: 68 x 4
+#&gt;     code code_level sector       borderline
+#&gt;    &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;        &lt;lgl&gt;     
+#&gt;  1    11 sector     not in scope FALSE     
+#&gt;  2    21 sector     not in scope FALSE     
+#&gt;  3    22 sector     not in scope FALSE     
+#&gt;  4    23 sector     not in scope FALSE     
+#&gt;  5    31 sector     not in scope FALSE     
+#&gt;  6    32 sector     not in scope FALSE     
+#&gt;  7    33 sector     not in scope FALSE     
+#&gt;  8    42 sector     not in scope FALSE     
+#&gt;  9    44 sector     not in scope FALSE     
+#&gt; 10    45 sector     not in scope FALSE     
+#&gt; # … with 58 more rows</code></pre>
 </div>
 <p>The dataset <code>region_isos</code> now includes the value “global” in the column <code>region</code>; it also gained the column <code>source</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>
-# A tibble: 206 x 3
-   region isos  source  
-   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   
- 1 global bg    weo_2019
- 2 global hr    weo_2019
- 3 global cy    weo_2019
- 4 global mt    weo_2019
- 5 global ro    weo_2019
- 6 global au    weo_2019
- 7 global at    weo_2019
- 8 global be    weo_2019
- 9 global ca    weo_2019
-10 global cl    weo_2019
-# … with 196 more rows</code></pre>
+<pre class="r"><code>
+region_isos %&gt;% filter(region == &quot;global&quot;)
+#&gt; # A tibble: 206 x 3
+#&gt;    region isos  source  
+#&gt;    &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   
+#&gt;  1 global bg    weo_2019
+#&gt;  2 global hr    weo_2019
+#&gt;  3 global cy    weo_2019
+#&gt;  4 global mt    weo_2019
+#&gt;  5 global ro    weo_2019
+#&gt;  6 global au    weo_2019
+#&gt;  7 global at    weo_2019
+#&gt;  8 global be    weo_2019
+#&gt;  9 global ca    weo_2019
+#&gt; 10 global cl    weo_2019
+#&gt; # … with 196 more rows</code></pre>
 </div>
 <p>The dataset <code>ald_demo</code> gained the column <code>ald_emission_factor_unit</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>
-# A tibble: 17,368 x 1
-   ald_emission_factor_unit       
-   &lt;chr&gt;                          
- 1 tons of CO2 per per hour per MW
- 2 tons of CO2 per per hour per MW
- 3 tons of CO2 per per hour per MW
- 4 tons of CO2 per per hour per MW
- 5 tons of CO2 per per hour per MW
- 6 tons of CO2 per per hour per MW
- 7 tons of CO2 per per hour per MW
- 8 tons of CO2 per per hour per MW
- 9 tons of CO2 per per hour per MW
-10 tons of CO2 per per hour per MW
-# … with 17,358 more rows</code></pre>
+<pre class="r"><code>
+select(ald_demo, ald_emission_factor_unit)
+#&gt; # A tibble: 17,368 x 1
+#&gt;    ald_emission_factor_unit       
+#&gt;    &lt;chr&gt;                          
+#&gt;  1 tons of CO2 per per hour per MW
+#&gt;  2 tons of CO2 per per hour per MW
+#&gt;  3 tons of CO2 per per hour per MW
+#&gt;  4 tons of CO2 per per hour per MW
+#&gt;  5 tons of CO2 per per hour per MW
+#&gt;  6 tons of CO2 per per hour per MW
+#&gt;  7 tons of CO2 per per hour per MW
+#&gt;  8 tons of CO2 per per hour per MW
+#&gt;  9 tons of CO2 per per hour per MW
+#&gt; 10 tons of CO2 per per hour per MW
+#&gt; # … with 17,358 more rows</code></pre>
 </div>
 <p>Finally, we added three new datasets: <code>co2_intensity_scenario_demo</code>, <code>region_isos_demo</code>, and <code>scenario_demo_2020</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>
-Rows: 334
-Columns: 3
-$ region &lt;chr&gt; &quot;advanced economies&quot;, &quot;advanced economies&quot;, &quot;advance…
-$ isos   &lt;chr&gt; &quot;bg&quot;, &quot;hr&quot;, &quot;cy&quot;, &quot;mt&quot;, &quot;ro&quot;, &quot;au&quot;, &quot;at&quot;, &quot;be&quot;, &quot;ca&quot;…
-$ source &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, …
-Rows: 1,323
-Columns: 8
-$ scenario        &lt;chr&gt; &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;…
-$ sector          &lt;chr&gt; &quot;automotive&quot;, &quot;automotive&quot;, &quot;automotive&quot;, &quot;…
-$ technology      &lt;chr&gt; &quot;electric&quot;, &quot;hybrid&quot;, &quot;ice&quot;, &quot;electric&quot;, &quot;h…
-$ region          &lt;chr&gt; &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;gl…
-$ year            &lt;int&gt; 2020, 2020, 2020, 2021, 2021, 2021, 2022, 2…
-$ tmsr            &lt;dbl&gt; 1.000000, 1.000000, 1.000000, 1.120288, 1.1…
-$ smsp            &lt;dbl&gt; 0.000000000, 0.000000000, 0.000000000, 0.00…
-$ scenario_source &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;dem…
-Rows: 22
-Columns: 7
-$ scenario_source      &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;,…
-$ scenario             &lt;chr&gt; &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;…
-$ sector               &lt;chr&gt; &quot;cement&quot;, &quot;cement&quot;, &quot;cement&quot;, &quot;cement&quot;…
-$ region               &lt;chr&gt; &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;global&quot;…
-$ year                 &lt;dbl&gt; 2020, 2021, 2022, 2023, 2024, 2025, 20…
-$ emission_factor_unit &lt;chr&gt; &quot;tons of CO2 per ton of Cement&quot;, &quot;tons…
-$ emission_factor      &lt;dbl&gt; 0.700000, 0.640000, 0.580000, 0.520000…</code></pre>
+<pre class="r"><code>
+glimpse(region_isos_demo)
+#&gt; Rows: 334
+#&gt; Columns: 3
+#&gt; $ region &lt;chr&gt; &quot;advanced economies&quot;, &quot;advanced economies&quot;, &quot;advance…
+#&gt; $ isos   &lt;chr&gt; &quot;bg&quot;, &quot;hr&quot;, &quot;cy&quot;, &quot;mt&quot;, &quot;ro&quot;, &quot;au&quot;, &quot;at&quot;, &quot;be&quot;, &quot;ca&quot;…
+#&gt; $ source &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, …
+
+glimpse(scenario_demo_2020)
+#&gt; Rows: 1,323
+#&gt; Columns: 8
+#&gt; $ scenario        &lt;chr&gt; &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;cps&quot;, &quot;…
+#&gt; $ sector          &lt;chr&gt; &quot;automotive&quot;, &quot;automotive&quot;, &quot;automotive&quot;, &quot;…
+#&gt; $ technology      &lt;chr&gt; &quot;electric&quot;, &quot;hybrid&quot;, &quot;ice&quot;, &quot;electric&quot;, &quot;h…
+#&gt; $ region          &lt;chr&gt; &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;gl…
+#&gt; $ year            &lt;int&gt; 2020, 2020, 2020, 2021, 2021, 2021, 2022, 2…
+#&gt; $ tmsr            &lt;dbl&gt; 1.000000, 1.000000, 1.000000, 1.120288, 1.1…
+#&gt; $ smsp            &lt;dbl&gt; 0.000000000, 0.000000000, 0.000000000, 0.00…
+#&gt; $ scenario_source &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;dem…
+
+glimpse(co2_intensity_scenario_demo)
+#&gt; Rows: 22
+#&gt; Columns: 7
+#&gt; $ scenario_source      &lt;chr&gt; &quot;demo_2020&quot;, &quot;demo_2020&quot;, &quot;demo_2020&quot;,…
+#&gt; $ scenario             &lt;chr&gt; &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;, &quot;demo&quot;…
+#&gt; $ sector               &lt;chr&gt; &quot;cement&quot;, &quot;cement&quot;, &quot;cement&quot;, &quot;cement&quot;…
+#&gt; $ region               &lt;chr&gt; &quot;global&quot;, &quot;global&quot;, &quot;global&quot;, &quot;global&quot;…
+#&gt; $ year                 &lt;dbl&gt; 2020, 2021, 2022, 2023, 2024, 2025, 20…
+#&gt; $ emission_factor_unit &lt;chr&gt; &quot;tons of CO2 per ton of Cement&quot;, &quot;tons…
+#&gt; $ emission_factor      &lt;dbl&gt; 0.700000, 0.640000, 0.580000, 0.520000…</code></pre>
 </div>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <div class="layout-chunk" data-layout="l-body">

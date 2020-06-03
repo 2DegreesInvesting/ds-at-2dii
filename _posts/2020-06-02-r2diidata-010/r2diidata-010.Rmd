@@ -24,7 +24,11 @@ twitter:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  collapse = TRUE,
+  comment = "#>"
+)
 ```
 
 r2dii.data 0.1.0 is now on CRAN. r2dii.data provides public datasets to help you study how financial assets align to climate scenarios.
