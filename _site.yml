@@ -1,12 +1,30 @@
-name: "ds-at-2dii"
-title: "Data science at 2DII"
-description: |
-  Data science at 2DII
-output_dir: "docs"
+name: "the-mockup-blog"
+title: "The Mockup Blog"
+# description: '|
+#  Exploring the wonderful world of #RStats'
+base_url: https://themockup.blog
+output_dir: "_site"
 navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "Resources"
+      href: resources.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+    - icon: fa fa-twitter
+      href: https://twitter.com/thomas_mock
+    - icon: fa fa-github
+      href: https://github.com/jthomasmock
+    - icon: fa fa-rss
+      href: sitemap.xml
+collections:
+  posts:
+    share: [twitter, linkedin]
+google_analytics: "UA-166026965-1"
+twitter:
+  site: "@thomas_mock"
+  creator: "@thomas_mock"
+output: 
+  distill::distill_article:
+    css: styles.css
