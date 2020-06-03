@@ -3,7 +3,7 @@ title: "Data Science at 2DII"
 # description: '|
 #  Shaping and sharing our thoughts'
 base_url: https://2degreesinvesting.github.io/ds-at-2dii/
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
