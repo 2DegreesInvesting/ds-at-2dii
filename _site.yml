@@ -24,4 +24,4 @@ twitter:
   creator: "@mauro_lepore"
 output: 
   distill::distill_article:
-    css: styles.css
+    theme: flatly
