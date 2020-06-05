@@ -72,9 +72,9 @@ All changes in this version are internal. In general, internal changes do not af
 
 * R packages: Latest version on CRAN.
 
-## When will our packages no longer support older versions of R dplyr?
+## When will our packages no longer support older versions of R or R packages (e.g. dplyr 0.8.5)?
 
-If your computer does not meet the requirements we test for, our packages might not work. We enforce that your version of R is -- at least -- the oldest one we test; but we rarely enforce specific versions of R packages. Whether or not to update R packages frequently is up to you; but most likely you should.
+If your computer does not meet the requirements we test for, our packages might not work. We enforce that your version of R is -- at least -- the oldest one we test for. But we rarely enforce specific versions of R packages. Although our packages might not work with your outdated packages, it is up to you to decide when to update them.
 
 ## [Should I update all my R packages frequently? Yes/No? why?](https://community.rstudio.com/t/should-i-update-all-my-r-packages-frequently-yes-no-why/5856)
 
