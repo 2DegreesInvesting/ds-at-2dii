@@ -33,7 +33,17 @@ knitr::opts_chunk$set(
 ```{r Post-title}
 ```
 
-r2dii.match 0.0.2 is now on CRAN. r2dii.match provides tools to match financial portfolios with climate data. This release is compatible with R back to v3.4 and with dplyr v0.8.5, but you should update as soon as possible.
+r2dii.match 0.0.2 is now on CRAN
+
+```{r DESCRIPTION-title}
+```
+
+r2dii.match provides tools to match financial portfolios with climate data.
+
+```{r Post-description}
+```
+
+This release is compatible with R back to v3.4 and with dplyr v0.8.5, but you should update as soon as possible.
 
 ```{r Installation-instructions}
 ```
