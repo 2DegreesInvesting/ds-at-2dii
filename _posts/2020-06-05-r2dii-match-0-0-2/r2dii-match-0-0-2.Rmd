@@ -84,7 +84,7 @@ If your R environment is different from what's listed above, our packages might 
 
 -- Jenny Bryan
 
-You should update your R packages as often as it is possible and convenient -- maybe weekly. This helps you keep up with the rapid change of popular packages. For example, we now support dplyr 0.8.5 but you should update to dplyr 1.0.0 ASAP. [Some features of dplyr 0.8.5 have been superseded in dplyr 1.0.0](https://dplyr.tidyverse.org/news/index.html#superseded). To stay within best practices, we may enforce dplyr > 1.0.0 any time.
+You should update your R packages as often as it is possible and convenient -- maybe weekly. This helps you keep up with the rapid change of popular packages. For example, we now support dplyr 0.8.5 but you should update to dplyr 1.0.0 ASAP. [Some features of dplyr 0.8.5 have been superseded in dplyr 1.0.0](https://dplyr.tidyverse.org/news/index.html#superseded). To stay within best practices, we may enforce dplyr >= 1.0.0 any time.
 
 ```{r Acknowledgements, echo=FALSE}
 # bash
