@@ -72,7 +72,7 @@ library(r2dii.match)
 
 * R packages: Latest version on CRAN.
 
-## When will our packages no longer support older versions of R or R packages (e.g. dplyr 0.8.5)?
+## When will our packages no longer support older versions of R or R packages?
 
 If your R environment is different from the what I listed above, our packages might fail. We enforce that your R version is earlier than four minor-releases (e.g. R-3.3 is now too old). But we rarely enforce specific versions of R packages. Even if your outdated packages might be incompatible, it is up to you to update them or not.
 
