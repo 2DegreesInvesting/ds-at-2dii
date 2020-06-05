@@ -1,6 +1,26 @@
 [
   {
-    "path": "posts/2020-06-02-r2diidata-010/",
+    "path": "posts/2020-06-05-r2dii-match-0-0-2/",
+    "title": "r2dii.match is now on cran",
+    "description": "This version includes only internal changes.",
+    "author": [
+      {
+        "name": "Mauro Lepore",
+        "url": "https://github.com/maurolepore"
+      }
+    ],
+    "date": "2020-06-05",
+    "categories": [
+      "r2dii",
+      "software development",
+      "release"
+    ],
+    "preview": "posts/2020-06-05-r2dii-match-0-0-2/preview.jpg",
+    "last_modified": "2020-06-05T06:59:55-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2020-06-03-r2dii-data-0-1-0/",
     "title": "r2dii.data 0.1.0 is now on CRAN",
     "description": "This release includes new and improved datasets.",
     "author": [
@@ -13,11 +33,11 @@
     "categories": [
       "r2dii",
       "software development",
-      "CRAN",
       "release"
     ],
-    "preview": "posts/2020-06-02-r2diidata-010/preview.jpg",
-    "last_modified": "2020-06-03T11:31:48-05:00"
+    "preview": "posts/2020-06-03-r2dii-data-0-1-0/preview.jpg",
+    "last_modified": "2020-06-05T07:00:22-05:00",
+    "input_file": {}
   },
   {
     "path": "posts/2020-06-02-shape-and-share-your-thoughts-here/",
@@ -36,6 +56,7 @@
       "community"
     ],
     "preview": "posts/2020-06-02-shape-and-share-your-thoughts-here/preview.jpg",
-    "last_modified": "2020-06-03T11:28:31-05:00"
+    "last_modified": "2020-06-05T07:00:08-05:00",
+    "input_file": {}
   }
 ]

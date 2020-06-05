@@ -6,7 +6,7 @@ author:
   - name: Mauro Lepore
     url: https://github.com/maurolepore
 base_url: https://2degreesinvesting.github.io/ds-at-2dii/
-date: 06-03-2020
+date: 2020-06-03
 output: 
   distill::distill_article:
     toc: true
@@ -15,7 +15,6 @@ output:
 categories:
   - r2dii
   - software development
-  - CRAN
   - release
 preview: preview.jpg
 twitter:
