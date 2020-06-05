@@ -74,7 +74,7 @@ library(r2dii.match)
 
 ## When will our packages no longer support older versions of R or R packages (e.g. dplyr 0.8.5)?
 
-If your computer does not meet the requirements we test for, our packages might not work. We enforce that your version of R is -- at least -- the oldest one we test for. But we rarely enforce specific versions of R packages. Although our packages might not work with your outdated packages, it is up to you to decide when to update them.
+If your R environment is different from the what I listed above, our packages might fail. We enforce that your R version is earlier than four minor-releases (e.g. R-3.3 is now too old). But we rarely enforce specific versions of R packages. Even if your outdated packages might be incompatible, it is up to you to update them or not.
 
 ## [Should I update all my R packages frequently? Yes/No? why?](https://community.rstudio.com/t/should-i-update-all-my-r-packages-frequently-yes-no-why/5856)
 
@@ -84,8 +84,7 @@ If your computer does not meet the requirements we test for, our packages might 
 
 -- Jenny Bryan
 
-In general, you should update your R packages as often as it is possible and convenient; maybe weekly. Popular packages change rapidly. For example, we now support dplyr v0.8.5 but you should update to dplyr v1.0.0 ASAP. [Some features of v0.8.5 have been superseded in v1.0.0](
-https://dplyr.tidyverse.org/news/index.html#superseded). In order to adhere to best practices we may enforce v1.0.0 any time.
+You should update your R packages as often as it is possible and convenient -- maybe weekly. This helps you keep up with the rapid change of popular packages. For example, we now support dplyr v0.8.5 but you should update to dplyr v1.0.0 ASAP. [Some features of v0.8.5 have been superseded in v1.0.0](https://dplyr.tidyverse.org/news/index.html#superseded). To stay within best practices, we may enforce v1.0.0 any time.
 
 ```{r Acknowledgements, echo=FALSE}
 # bash
