@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/2020-06-05-r2dii-match-0-0-2/",
-    "title": "r2dii.match is now on cran",
-    "description": "This version includes only internal changes.",
+    "title": "r2dii.match 0.0.2 is now on CRAN",
+    "description": "Does it work with older versions of R and dplyr? Yes, but you should update ASAP.",
     "author": [
       {
         "name": "Mauro Lepore",
@@ -16,7 +16,7 @@
       "release"
     ],
     "preview": "posts/2020-06-05-r2dii-match-0-0-2/preview.jpg",
-    "last_modified": "2020-06-05T06:59:55-05:00",
+    "last_modified": "2020-06-05T10:58:39-05:00",
     "input_file": {}
   },
   {
@@ -36,7 +36,7 @@
       "release"
     ],
     "preview": "posts/2020-06-03-r2dii-data-0-1-0/preview.jpg",
-    "last_modified": "2020-06-05T07:00:22-05:00",
+    "last_modified": "2020-06-05T08:11:37-05:00",
     "input_file": {}
   },
   {
