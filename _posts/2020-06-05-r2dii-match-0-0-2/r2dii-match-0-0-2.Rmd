@@ -56,7 +56,8 @@ library(r2dii.match)
 ```{r NEWS-details}
 ```
 
-[All changes in this version are internal](https://github.com/2DegreesInvesting/r2dii.match/releases/tag/v0.0.2). In general, internal changes do not affect you as a user in the short term; but in the long term, they might. In this post I will explain a few details of our internal work; the goal is to help you decide whether or not you should update R or R packages.
+[All changes in this version are internal](https://github.com/2DegreesInvesting/r2dii.match/releases/tag/v0.0.2). In general, internal changes do not affect users short term; but in the long term, they might. Here I explain how internal work in 
+R packages may eventually impact you; and I encourage you to update R and R packages to keep things working as you expect.
 
 ## Do our packages work on your computer?
 
