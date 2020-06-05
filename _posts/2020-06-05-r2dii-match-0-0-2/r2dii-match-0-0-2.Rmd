@@ -1,7 +1,7 @@
 ---
 title: "r2dii.match 0.0.2 is now on CRAN"
 description: |
-  It's compatible with dplyr 0.8.5 and R back to 3.4; but update ASAP!
+  It's compatible with R back to 3.4, and dplyr 0.8.5; but update ASAP!
 author:
   - name: Mauro Lepore
     url: https://github.com/maurolepore
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(
 ```{r Post-title}
 ```
 
-r2dii.match 0.0.2 is now on CRAN. r2dii.match provides tools to match financial portfolios with climate data. This release is compatible with with dplyr v0.8.5, and with R back to v3.4; but you should get current ASAP.
+r2dii.match 0.0.2 is now on CRAN. r2dii.match provides tools to match financial portfolios with climate data. This release is compatible with R back to 3.4, and with dplyr 0.8.5. But you should update as soon as possible.
 
 ```{r Installation-instructions}
 ```
@@ -76,7 +76,7 @@ library(r2dii.match)
 
 If your R environment is different from what's listed above, our packages might fail. We enforce that your R version is earlier than four minor-releases (e.g. R-3.3 is now too old). But we rarely enforce specific versions of R packages. Even if your outdated packages might be incompatible, it is up to you to update them or not.
 
-## [Should I update all my R packages frequently? Yes/No? why?](https://community.rstudio.com/t/should-i-update-all-my-r-packages-frequently-yes-no-why/5856)
+## [Should I update all my R packages frequently? Yes/No? Why?](https://community.rstudio.com/t/should-i-update-all-my-r-packages-frequently-yes-no-why/5856)
 
 > You will always eventually have a reason that you must update. So you can either do that very infrequently, suffer with old versions in the middle, and experience great pain at update. Or admit that maintaining your system is a normal ongoing activity, and do it more often.
 
@@ -84,7 +84,7 @@ If your R environment is different from what's listed above, our packages might 
 
 -- Jenny Bryan
 
-You should update your R packages as often as it is possible and convenient -- maybe weekly. This helps you keep up with the rapid change of popular packages. For example, we now support dplyr v0.8.5 but you should update to dplyr v1.0.0 ASAP. [Some features of v0.8.5 have been superseded in v1.0.0](https://dplyr.tidyverse.org/news/index.html#superseded). To stay within best practices, we may enforce v1.0.0 any time.
+You should update your R packages as often as it is possible and convenient -- maybe weekly. This helps you keep up with the rapid change of popular packages. For example, we now support dplyr 0.8.5 but you should update to dplyr 1.0.0 ASAP. [Some features of dplyr 0.8.5 have been superseded in dplyr 1.0.0](https://dplyr.tidyverse.org/news/index.html#superseded). To stay within best practices, we may enforce dplyr > 1.0.0 any time.
 
 ```{r Acknowledgements, echo=FALSE}
 # bash
